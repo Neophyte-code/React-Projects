@@ -8,9 +8,9 @@ function App(){
   const [activeTab, setActiveTab] = useState('calculator')
 
   return(
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen">
       {/* Navigation Bar */}
-      <nav className="bg-blue-600 text-white shadow-2xl rounded-2xl">
+      <nav className="bg-blue-500 text-white shadow-2xl rounded-2xl">
         <div className="container mx-auto p-4">
           <div className="flex justify-between">
             <div className="flex justify-between items-center py-4">
@@ -22,7 +22,7 @@ function App(){
                 Calculator
               </button>
               <button className={`px-4 py-2 rounded-md ${activeTab === 'quiz' ? 'bg-blue-800' : 'hover:bg-blue-700'}`} onClick={() => setActiveTab('quiz')}>
-                Quiz App
+                Quiz
               </button>
             </div>
           </div>
